@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Sweet Escape</title>
+<link rel="icon" type="image/png" href="../Image/Logo_2.png"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../CSS/Room_Gallery.css">
+</head>
+
+<body>
+<div class="header">
+  <div class="topnav">
+  <img src="../Image/Logo_2.png">
+  <a href="../Page/About%20Us_Page.html">About Us</a>
+  <a href="../Page/Gallery_Page.html"class="active">Gallery</a>
+  <a href="../Page/Order_Page.html">Order</a>
+  <a href="../Page/Home_Page.html">Home</a>
+  </div>
+</div>
+
+<div Class="LineDesign_1">
+</div>
+
+<div class="column">
+<div class="card">
+
+<div class="card_2">
+<div class="topnav1">
+  <a href="../Gallery_Page/Inside.html"class="active">Inside</a>
+  <a href="../Gallery_Page/Private_Room.html">Private Room</a>
+  <a href="../Gallery_Page/V-I-P_Section.html">V.I.P Section</a>
+  </div>
+
+<div Class="LineDesign_3">
+</div>
+
+<div class="slideshow-container">
+<!--overlay display 1-->
+<div id="overlay1" onclick="off()">
+</div>  
+
+<!--E N D-->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 1</div>
+  <div class="container">
+    <img src="../Image/inside1.png" class="image" style="width:100%">
+  </div>
+</div>
+
+<!--overlay display 2-->
+<div id="overlay2" onclick="off()">
+</div>  
+
+<!--E N D-->
+<div class="mySlides fade">
+<div class="numbertext">2 / 2</div>
+<div class="container">
+<img src="../Image/Inside2.png" class="image" style="width:100%">
+</div>
+</div>
+
+<!--overlay display 3-->
+<div id="overlay3" onclick="off()">
+</div> 
+    
+<!--E N D-->
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<div class="container">
+<img src="../Image/Inside3.png" class="image" style="width:100%">
+</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+    
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-- overlay effect script -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+/*overlay effect script*/
+function on() {
+  document.getElementById("overlay1").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay1").style.display = "none";
+}
+
+function on() {
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay2").style.display = "none";
+}
+
+function on() {
+  document.getElementById("overlay3").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay3").style.display = "none";
+}
+
+function on() {
+  document.getElementById("overlay4").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay4").style.display = "none";
+}
+
+function on() {
+  document.getElementById("overlay5").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay5").style.display = "none";
+}
+function on() {
+  document.getElementById("overlay6").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay6").style.display = "none";
+}
+</script>
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <div class="buttom_Text">
+  <a href="../Page/Home_Page.html">| Home |</a>
+  <a href="../Page/Order_Page.html">Order |</a>
+  <a href="../Page/Gallery_Page.html">Gallery |</a>
+  <a href="../Page/About%20Us_Page.html">About Us |</a>
+  <p style="font-size:85%">© 2019 Purple wall. All rights reserved.</p>
+ </div>
+</div>
+<div Class="LineDesign_1">
+</div>
+</body>
+    
+</html>
